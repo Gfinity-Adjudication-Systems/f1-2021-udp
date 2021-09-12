@@ -310,3 +310,34 @@ export interface PacketLobbyInfoData {
   m_numPlayers: number;
   m_lobbyPlayers: LobbyInfoData[];
 }
+
+export interface PenaltyEvent extends PacketEventData {
+  m_eventDetails: PenaltyData;
+}
+
+export interface PenaltyData {
+  penaltyType: number;
+  infringementType: number;
+  vehicleIdx: number;
+  otherVehicleIdx: number;
+  time: number;
+  lapNum: number;
+  placesGained: number;
+}
+
+export interface FastestLapEvent extends PacketEventData {
+  m_eventDetails: FastestLapData;
+}
+
+export interface FastestLapData {
+  vehicleIdx: number;
+  lapTime: number;
+}
+export interface SpeedTrapEvent extends PacketEventData {
+  m_eventDetails: SpeedTrapData;
+}
+
+export interface SpeedTrapData {
+  vehicleIdx: number;
+  speed: number;
+}
