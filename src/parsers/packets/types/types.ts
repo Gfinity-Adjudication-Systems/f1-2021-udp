@@ -118,11 +118,11 @@ export interface MarshalZone {
 }
 
 export interface LapData {
-  m_lastLapTime: number;
-  m_currentLapTime: number;
-  m_bestLapTime: number;
-  m_sector1Time: number;
-  m_sector2Time: number;
+  m_lastLapTimeInMS: number;
+  m_currentLapTimeInMS: number;
+  m_bestLapNum: number;
+  m_sector1TimeInMS: number;
+  m_sector2TimeInMS: number;
   m_lapDistance: number;
   m_totalDistance: number;
   m_safetyCarDelta: number;
