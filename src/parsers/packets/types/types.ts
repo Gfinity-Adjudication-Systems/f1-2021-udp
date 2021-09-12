@@ -283,7 +283,7 @@ export interface FinalClassificationData {
   m_points: number;
   m_numPitStops: number;
   m_resultStatus: number;
-  m_bestLapTime: number;
+  m_bestLapTimeInMS: number;
   m_totalRaceTime: number;
   m_penaltiesTime: number;
   m_numPenalties: number;
