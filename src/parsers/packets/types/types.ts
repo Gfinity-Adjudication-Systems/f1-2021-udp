@@ -132,6 +132,7 @@ export interface LapData {
   m_sector: number;
   m_currentLapInvalid: number;
   m_penalties: number;
+  m_warnings: number;
   m_gridPosition: number;
   m_driverStatus: number;
   m_resultStatus: number;
